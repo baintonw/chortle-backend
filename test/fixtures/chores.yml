@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  room: MyString
+  duedate: 2019-08-07 14:38:41
+  completed: false
+
+two:
+  name: MyString
+  room: MyString
+  duedate: 2019-08-07 14:38:41
+  completed: false
