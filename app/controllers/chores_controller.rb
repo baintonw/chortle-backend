@@ -10,4 +10,23 @@ class ChoresController < ApplicationController
 
     render json: @chore
   end
+
+  def create
+    byebug
+  end
+
+  def claimtoggle
+
+    chore = Chore.find(params[:id])
+    chore.update(claimed: params[:claimed])
+
+    render json: chore
+  end
+
+  private
+
+  def chore_params
+    params.require(:chore).permit(:name, :room, :duedate, :completed, :claimed)
+  end
+
 end
