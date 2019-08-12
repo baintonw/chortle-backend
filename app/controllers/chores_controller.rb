@@ -12,7 +12,9 @@ class ChoresController < ApplicationController
   end
 
   def create
-    byebug
+    chore = Chore.create(chore_params)
+
+    render json: chore
   end
 
   def claimtoggle
@@ -26,7 +28,7 @@ class ChoresController < ApplicationController
   private
 
   def chore_params
-    params.require(:chore).permit(:name, :room, :duedate, :completed, :claimed)
+    params.require(:chore).permit(:name, :room, :duedate)
   end
 
 end

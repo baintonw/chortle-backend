@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2019_08_11_214809) do
     t.string "name"
     t.string "room"
     t.datetime "duedate"
-    t.boolean "completed"
+    t.boolean "completed", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.boolean "claimed", default: false

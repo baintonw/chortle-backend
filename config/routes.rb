@@ -17,4 +17,6 @@ Rails.application.routes.draw do
   get '/claims', to: "claims#index"
   post '/claims', to: "claims#claim"
 
+  post '/auto_login', to: "auth#auto_login"
+
 end

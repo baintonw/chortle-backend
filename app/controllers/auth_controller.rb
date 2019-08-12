@@ -8,10 +8,21 @@ class AuthController < ApplicationController
     end
   end
 
+  def auto_login
+    user = User.find(request.headers["Authorization"])
+    if user
+      render json: user
+    else
+      render json: {errors: "Not in db"}
+    end
+  end
+
   def signup
       user = User.create(username: params[:username], password: params[:password])
       render json: user
   end
+
+
 
   private
 
