@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   get '/chores', to: "chores#index"
   post '/chores', to: "chores#create"
   get '/chores/:id', to: "chores#show"
+  delete '/chores/:id', to: "chores#delete"
 
 
   get '/login', to: "auth#index"
@@ -14,9 +15,13 @@ Rails.application.routes.draw do
 
   patch '/chores/:id', to: "chores#claimtoggle"
 
+  patch '/chores/:id/edit', to: "chores#edit"
+
   get '/claims', to: "claims#index"
   post '/claims', to: "claims#claim"
 
   post '/auto_login', to: "auth#auto_login"
+
+  patch '/chores/:id/complete', to: "chores#complete"
 
 end

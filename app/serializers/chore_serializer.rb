@@ -1,3 +1,3 @@
 class ChoreSerializer < ActiveModel::Serializer
-  attributes :id, :name, :room, :duedate, :claimed, :completed, :users
+  attributes :id, :title, :room, :duedate, :claimed, :completed, :users, :description
 end

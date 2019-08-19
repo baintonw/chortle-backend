@@ -18,9 +18,32 @@ class ChoresController < ApplicationController
   end
 
   def claimtoggle
-
     chore = Chore.find(params[:id])
     chore.update(claimed: params[:claimed])
+
+    render json: chore
+  end
+
+  def complete
+    chore = Chore.find(params[:id])
+
+    chore.update(completed: params[:completed])
+
+    render json: chore
+  end
+
+  def delete
+    chore = Chore.find(params[:id])
+    chore.delete
+
+    render json: chore
+  end
+
+  def edit
+
+    chore = Chore.find(params[:id])
+
+    chore.update(title: params[:title], room: params[:room], duedate: params[:duedate], description: params[:description])
 
     render json: chore
   end
@@ -28,7 +51,7 @@ class ChoresController < ApplicationController
   private
 
   def chore_params
-    params.require(:chore).permit(:name, :room, :duedate)
+    params.require(:chore).permit(:title, :room, :duedate, :description)
   end
 
 end
