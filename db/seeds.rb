@@ -10,20 +10,20 @@ Userchore.destroy_all
 User.destroy_all
 Chore.destroy_all
 
-User.create(username: "Jerry", password: "123")
-User.create(username: "Elaine", password: "123")
-User.create(username: "George", password: "123")
-User.create(username: "Kramer", password: "123")
+User.create(username: "Jerry", password: "123", description: "Yada yada yada")
+User.create(username: "Elaine", password: "123", description: "Yada yada yada")
+User.create(username: "George", password: "123", description: "Yada yada yada")
+User.create(username: "Kramer", password: "123", description: "Yada yada yada")
 
-Chore.create(title: "Do the dishes", room: "Kitchen", duedate: "08-10-2019", completed: false, description: "Could use a little help with this one!")
-Chore.create(title: "Take out the trash", room: "Kitchen", duedate: "08-11-2019", completed: false, description: "Could use a little help with this one!")
-Chore.create(title: "Clean the litterbox", room: "Living room", duedate: "08-12-2019", completed: false, description: "Could use a little help with this one!")
-Chore.create(title: "Organize the bar", room: "Dining room", duedate: "08-14-2019", completed: false, description: "Could use a little help with this one!")
-Chore.create(title: "Vacuum the living room", room: "Dining room", duedate: "08-16-2019", completed: false, description: "Could use a little help with this one!")
-Chore.create(title: "Feed the cat", room: "Dining room", duedate: "08-17-2019", completed: false, description: "Could use a little help with this one!")
+Chore.create(title: "Do the dishes", room: "Kitchen", duedate: "08-20-2019", completed: false, description: "Could use a little help with this one!")
+Chore.create(title: "Take out the trash", room: "Kitchen", duedate: "08-21-2019", completed: false, description: "Could use a little help with this one!")
+Chore.create(title: "Clean the litterbox", room: "Living room", duedate: "08-22-2019", completed: false, description: "Could use a little help with this one!")
+Chore.create(title: "Organize the bar", room: "Dining room", duedate: "08-23-2019", completed: false, description: "Could use a little help with this one!")
+Chore.create(title: "Vacuum the living room", room: "Dining room", duedate: "08-26-2019", completed: false, description: "Could use a little help with this one!")
+Chore.create(title: "Feed the cat", room: "Dining room", duedate: "08-27-2019", completed: false, description: "Could use a little help with this one!")
 Chore.create(title: "Walk the dog", room: "Dining room", duedate: "08-18-2019", completed: false, description: "Could use a little help with this one!")
-Chore.create(title: "Vacuum the living room", room: "Dining room", duedate: "08-16-2019", completed: false, description: "Could use a little help with this one!")
-Chore.create(title: "Do the dishes AGAIN", room: "Dining room", duedate: "08-19-2019", completed: false, description: "Could use a little help with this one!")
+Chore.create(title: "Vacuum the living room", room: "Dining room", duedate: "08-22-2019", completed: false, description: "Could use a little help with this one!")
+Chore.create(title: "Do the dishes AGAIN", room: "Dining room", duedate: "08-24-2019", completed: false, description: "Could use a little help with this one!")
 Chore.create(title: "Graduate!", room: "Dining room", duedate: "08-23-2019", completed: false, description: "Could use a little help with this one!")
 
 

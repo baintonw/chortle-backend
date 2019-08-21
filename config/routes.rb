@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   get '/users', to: "users#index"
   get '/users/:id', to: "users#show"
+  patch '/users/:id/edit', to:"users#edit"
 
   get '/chores', to: "chores#index"
   post '/chores', to: "chores#create"

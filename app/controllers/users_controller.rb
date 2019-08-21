@@ -10,4 +10,13 @@ class UsersController < ApplicationController
 
     render json: @user
   end
+
+  def edit
+    user = User.find(params[:id])
+
+    user.update(description: params[:description])
+
+    render json: user
+  end
+
 end
